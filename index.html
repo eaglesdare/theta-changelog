@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Theta Changelog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+<body>
+	<div class="ui container">
+		<h1 class="ui header" style="margin-top: 1em;">ThetaStation changelog</h1>
+		<form id="testForm" class="ui form">
+			<!-- for demo purposes, delete me -->
+			<div class="inline fields">
+				<div class="field">
+					<input type="text" placeholder="Owner" id="formOwner">
+				</div>
+				<div class="field">
+					<input type="text" placeholder="Repo" id="formRepo">
+				</div>
+				<button type="submit" class="ui button">Fetch</button>
+			</div>
+		</form>
+		<table class="ui stackable celled table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Изменения</th>
+				</tr>
+			</thead>
+			<tbody id="changelogTable">
+				<tr>
+					<td colspan="2">
+						<div class="ui segment" style="height: 10em;">
+							<div class="ui active dimmer">
+								<div class="ui text loader">Пожалуйста подождите пока это говно грузится</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="module" src="/js/index.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
+</body>
+</html>
