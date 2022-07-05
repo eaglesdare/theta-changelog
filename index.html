@@ -9,8 +9,7 @@
 <body>
 	<div class="ui container">
 		<h1 class="ui header" style="margin-top: 1em;">ThetaStation changelog</h1>
-		<form id="testForm" class="ui form">
-			<!-- for demo purposes, delete me -->
+		<!-- <form id="testForm" class="ui form">
 			<div class="inline fields">
 				<div class="field">
 					<input type="text" placeholder="Owner" id="formOwner">
@@ -20,6 +19,12 @@
 				</div>
 				<button type="submit" class="ui button">Fetch</button>
 			</div>
+		</form> -->
+		<form id="searchForm" class="ui form">
+				<div class="ui fluid action input field">
+					<input type="text" placeholder="Поиск по чейнджлогу..." id="searchQuery">
+					<button type="submit" class="ui primary icon button"><i class="search icon"></i></button>
+				</div>
 		</form>
 		<table class="ui stackable celled table">
 			<thead>
@@ -28,17 +33,18 @@
 					<th>Изменения</th>
 				</tr>
 			</thead>
-			<tbody id="changelogTable">
+			<tbody id="changelogTable"></tbody>
+			<tfoot>
 				<tr>
 					<td colspan="2">
-						<div class="ui segment" style="height: 10em;">
-							<div class="ui active dimmer">
+						<div class="ui basic segment" style="height: 10em;">
+							<div class="ui active inverted dimmer">
 								<div class="ui text loader">Пожалуйста подождите пока это говно грузится</div>
 							</div>
 						</div>
 					</td>
 				</tr>
-			</tbody>
+			</tfoot>
 		</table>
 	</div>
 	<script type="module" src="/js/index.js"></script>
